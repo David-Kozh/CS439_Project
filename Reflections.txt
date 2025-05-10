@@ -1,0 +1,6 @@
+The line between low/high popularity dataset is somewhat arbitrary, and for my purposes a value in the range of 55-65 would perhaps have been better. This is validated by the presence of songs with popularity scores even below 50 in the 'Most Streamed Spotify Songs 2024' dataset. Scores in the range of 85-100 are possibly more representative of good songs that additionally have some of the following factors: temporary virality rather than sustained popularity, large marketing budgets, large names behind it, or some other non-audio factor.
+
+External factors (e.g., marketing, artist popularity, playlist placements) not captured in the dataset might play a significant role in determining song popularity.
+--> Or at least cloud the relationships between features to the point that they are not discernable from this dataset.
+
+Using models like XGBoost or Random Forest may be interesting methods to continue analysis on this dataset in the supervised learning realm, to build a model to evaluate the probability of success given the audio features of a spotify song. However, more work would be needed to reduce/nullify the effect of non-audio factors on track_popularity to properly train the model. 
